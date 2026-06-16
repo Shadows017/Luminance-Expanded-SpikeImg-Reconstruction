@@ -5,31 +5,31 @@
 一、 dataset processing prog: 数据集处理程序
 
     (i) luminance_expansion_multi_thread.py
-    1. 功能：
-    利用 Albumentations库 对 PNG 图像进行：
-    (1) 亮度缩放
-    (2) 泊松噪声添加
+        1. 功能：
+        利用 Albumentations库 对 PNG 图像进行：
+        (1) 亮度缩放
+        (2) 泊松噪声添加
 
-    2. 解释器要求：
-    安装 albumentations
+        2. 解释器要求：
+        安装 albumentations
 
-    3. 路径要求
-    (1) 输入目录：
-        "./spike_x4k/train/gt",
-        "./spike_x4k/test/gt"
-    (2) 输出目录：
-        "./luminance_expanded_spike_x4k/train/gt"
-        "./luminance_expanded_spike_x4k/test/gt"
+        3. 路径要求
+        (1) 输入目录：
+            "./spike_x4k/train/gt",
+            "./spike_x4k/test/gt"
+        (2) 输出目录：
+            "./luminance_expanded_spike_x4k/train/gt"
+            "./luminance_expanded_spike_x4k/test/gt"
 
-    4. 文件命名格式
-    (1) 输入文件：
-        "./spike_x4k/train/gt"下："occ[序号1].[序号2]_f[序号3]_key_id[id号].png"
-        "./spike_x4k/test/gt"下："TEST[序号1]_[序号2]_f[序号3]_key_id[id号].png"
-    (2) 输出文件：
-        "./luminance_expanded_spike_x4k/train/gt"下："lambda[光度倍率]_occ[序号1].[序号2]_f[序号3]_key_id[id号].png"
-        "./luminance_expanded_spike_x4k/test/gt"下："lambda[光度倍率]_TEST[序号1]_[序号2]_f[序号3]_key_id[id号].png"
+        4. 文件命名格式
+        (1) 输入文件：
+            "./spike_x4k/train/gt"下："occ[序号1].[序号2]_f[序号3]_key_id[id号].png"
+            "./spike_x4k/test/gt"下："TEST[序号1]_[序号2]_f[序号3]_key_id[id号].png"
+        (2) 输出文件：
+            "./luminance_expanded_spike_x4k/train/gt"下："lambda[光度倍率]_occ[序号1].[序号2]_f[序号3]_key_id[id号].png"
+            "./luminance_expanded_spike_x4k/test/gt"下："lambda[光度倍率]_TEST[序号1]_[序号2]_f[序号3]_key_id[id号].png"
 
-    5. 采用多线程加速
+        5. 采用多线程加速
        
     (ii) spike_generator_multi_thread.py: 用数据集图片生成.dat脉冲流文件
         1. 功能
