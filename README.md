@@ -6,7 +6,7 @@
 ---
 
 # 目录
-## 一、 dataset processing prog: 数据集处理程序
+## 一、 dataset processing prog: 数据集处理程序（by:Shadowindows_017）
 ###  (i) luminance_expansion_multi_thread.py
         1. 功能：
         利用 Albumentations库 对 PNG 图像进行：
