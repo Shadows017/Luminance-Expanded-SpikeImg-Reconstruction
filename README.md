@@ -18,8 +18,10 @@
 
         3. 路径要求
         (1) 输入目录：
+        ```test
             "./spike_x4k/train/gt",
             "./spike_x4k/test/gt"
+        ```
         (2) 输出目录：
             "./luminance_expanded_spike_x4k/train/gt"
             "./luminance_expanded_spike_x4k/test/gt"
