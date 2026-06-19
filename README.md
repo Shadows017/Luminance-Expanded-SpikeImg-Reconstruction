@@ -9,11 +9,13 @@
 ## 一、 dataset processing prog: 数据集处理程序（by:Shadowindows_017）
 ###  (i) luminance_expansion_multi_thread.py
 1. 功能：
+
 利用 Albumentations库 对 PNG 图像进行：
+
 (1) 亮度缩放
 (2) 泊松噪声添加
 
-2. 解释器要求：
+4. 解释器要求：
 安装 albumentations
 
         3. 路径要求
