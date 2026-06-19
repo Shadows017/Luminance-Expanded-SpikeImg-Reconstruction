@@ -111,9 +111,9 @@
 
 做了修改，以适配多线程。
 
-(目录例：
-        
-        本机地址为C:\Users\Lenovo\SpikeCV\SpikeCV\spkData\convert_img.py
+(目录例：本机地址为
+
+        C:\Users\Lenovo\SpikeCV\SpikeCV\spkData\convert_img.py
 
 )
 
@@ -157,42 +157,67 @@
 5. 采用多线程加速
    
 ###  (iv) demo_spike_generator_multi_thread.py: 用路演demo图片生成.dat脉冲流文件
-        1. 功能
-        使用官方 Spike库 的 img_to_spike函数 将.png图片组转换为.dat脉冲流文件
+1. 功能
 
-        2. 解释器要求：
-        (1) 安装北大官方的Spike库
-        安装过程（在anaconda环境命令行中依次运行）：
-            git clone https://git.openi.org.cn/Cordium/SpikeCV.git （一台pc安装一次SpikeCV即可，剩下的需要每个环境执行一次）
-            cd SpikeCV （安装好的SpikeCV是个文件夹，进入该目录执行下一条命令）
-            pip install -e . （文件夹里预存了配置信息，运行这条命令自动安装配置，但是numpy版本不对需要手动改）
-        （安装后实际调用的时候，程序报错区可能还会显示“无法解析导入Spike”，无视掉，正常跑就行）
-        (2) pyhton版本为3.10.x
-        (3) 安装numpy v1.26.x
+使用官方 Spike库 的 img_to_spike函数 将.png图片组转换为.dat脉冲流文件
 
-        3. 时间结构：
-        (1) 全0空白timestep
-        (2) 一组5张图，每张图生成8个timestep
-        (3) 一个.dat文件共含41timestep
+2. 解释器要求：
 
-        4. 路径要求
-        (1) 输入目录：
-            "./luminance_expanded_demo_dataset_1000x1000/gt"
-        (2) 输出目录：
-            "./luminance_expanded_demo_dataset_1000x1000/input"
+(1) 安装北大官方的Spike库
 
-        5. 文件命名格式
-        (1) 输入文件：
-            "./luminance_expanded_demo_dataset_1000x1000/gt"下："lambda[光度倍率]_[命名，需要读取]_clip[序号1]_f[序号2].png"
-        (2) 输出文件：
-            "./luminance_expanded_demo_dataset_1000x1000/input"下："lambda[光度倍率]_[命名，需要读取]_clip[序号1].dat"
+安装过程（在anaconda环境命令行中依次运行）：
 
-        6. 注意：
-        本程序按需求对SpikeCV\SpikeCV\spkData\convert_img.py中的img_to_spike函数做了修改，以适配多线程加速。
-        (目录例：本机地址为C:\Users\Lenovo\SpikeCV\SpikeCV\spkData\convert_img.py)
-        若后续需要使用原本的功能，请记得改回文件。
+        git clone https://git.openi.org.cn/Cordium/SpikeCV.git （一台pc安装一次SpikeCV即可，剩下的需要每个环境执行一次）
+        cd SpikeCV （安装好的SpikeCV是个文件夹，进入该目录执行下一条命令）
+        pip install -e . （文件夹里预存了配置信息，运行这条命令自动安装配置，但是numpy版本不对需要手动改）
 
-        7. 采用多线程加速
+（安装后实际调用的时候，程序报错区可能还会显示“无法解析导入Spike”，无视掉，正常跑就行）
+
+(2) pyhton版本为3.10.x
+
+(3) 安装numpy v1.26.x
+
+3. 时间结构：
+
+(1) 全0空白timestep
+
+(2) 一组5张图，每张图生成8个timestep
+
+(3) 一个.dat文件共含41timestep
+
+4. 路径要求
+
+(1) 输入目录：
+
+        "./luminance_expanded_demo_dataset_1000x1000/gt"
+
+(2) 输出目录：
+
+        "./luminance_expanded_demo_dataset_1000x1000/input"
+
+6. 文件命名格式
+
+(1) 输入文件：
+
+        "./luminance_expanded_demo_dataset_1000x1000/gt"下："lambda[光度倍率]_[命名，需要读取]_clip[序号1]_f[序号2].png"
+
+(2) 输出文件：
+
+        "./luminance_expanded_demo_dataset_1000x1000/input"下："lambda[光度倍率]_[命名，需要读取]_clip[序号1].dat"
+
+6. 注意：
+
+本程序按需求对SpikeCV\SpikeCV\spkData\convert_img.py中的img_to_spike函数做了修改，以适配多线程加速。
+
+(目录例：本机地址为
+
+        C:\Users\Lenovo\SpikeCV\SpikeCV\spkData\convert_img.py
+
+)
+
+若后续需要使用原本的功能，请记得改回文件。
+
+7. 采用多线程加速
 
 ###  (v) spike_reader.py: 可视化.dat脉冲流文件
        1. 功能
