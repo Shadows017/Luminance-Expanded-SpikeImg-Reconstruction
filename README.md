@@ -24,29 +24,29 @@
 
 (1) 输入目录：
 
-"./spike_x4k/train/gt"
+        "./spike_x4k/train/gt"
 
-"./spike_x4k/test/gt"
+        "./spike_x4k/test/gt"
 
 (2) 输出目录：
 
-"./luminance_expanded_spike_x4k/train/gt"
+        "./luminance_expanded_spike_x4k/train/gt"
 
-"./luminance_expanded_spike_x4k/test/gt"
+        "./luminance_expanded_spike_x4k/test/gt"
 
 4. 文件命名格式
 
 (1) 输入文件：
 
-"./spike_x4k/train/gt"下："occ[序号1].[序号2]_f[序号3]_key_id[id号].png"
+        "./spike_x4k/train/gt"下："occ[序号1].[序号2]_f[序号3]_key_id[id号].png"
 
-"./spike_x4k/test/gt"下："TEST[序号1]_[序号2]_f[序号3]_key_id[id号].png"
+        "./spike_x4k/test/gt"下："TEST[序号1]_[序号2]_f[序号3]_key_id[id号].png"
 
 (2) 输出文件：
 
-"./luminance_expanded_spike_x4k/train/gt"下："lambda[光度倍率]_occ[序号1].[序号2]_f[序号3]_key_id[id号].png"
+        "./luminance_expanded_spike_x4k/train/gt"下："lambda[光度倍率]_occ[序号1].[序号2]_f[序号3]_key_id[id号].png"
 
-"./luminance_expanded_spike_x4k/test/gt"下："lambda[光度倍率]_TEST[序号1]_[序号2]_f[序号3]_key_id[id号].png"
+        "./luminance_expanded_spike_x4k/test/gt"下："lambda[光度倍率]_TEST[序号1]_[序号2]_f[序号3]_key_id[id号].png"
 
 5. 采用多线程加速
         
