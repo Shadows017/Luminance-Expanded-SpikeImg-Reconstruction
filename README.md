@@ -1,7 +1,5 @@
----
-
 # Luminance-Expanded-SpikeImg-Reconstruction
-《极微光环境下脉冲相机图象的精确重建》项目文件
+《极微光环境下脉冲相机图象的精确重建》
 
 ---
 
