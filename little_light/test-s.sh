@@ -1,0 +1,17 @@
+python test.py \
+  --data_mode 1000 \
+  --dataset_path ../../data/luminance_expanded_spike_x4k \
+  --device cuda:0 \
+  --load_model "checkpoint/distill_2026-06-15_14_30_28/best_student_psnr:35.3066_epoch:0_.pth" \
+  --model la_swinsf_lite \
+  --student_from_grouped \
+  --etas 0.1 0.3 0.5 0.7 1.0 2.0 \
+  --target_eta 0.3 \
+  --conversion_rate 0.6 \
+  --data_range 255 \
+  --use_light_code \
+  --use_ldf_lite \
+  --use_lsa_lite \
+  --descriptor_dim 64 \
+  --save_image True \
+  --save_path ./save/debug-student-from-grouped

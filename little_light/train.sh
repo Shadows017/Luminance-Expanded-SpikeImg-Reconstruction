@@ -1,0 +1,15 @@
+python train.py \
+  --data_mode 1000 \
+  --dataset_path ../../data/luminance_expanded_spike_x4k \
+  --device cuda:0 \
+  --model la_swinsf_lite \
+  --dataset_mode grouped \
+  --etas 0.1 0.3 0.5 0.7 1.0 2.0 \
+  --use_light_code \
+  --use_ldf_lite \
+  --use_lsa_lite \
+  --target_eta 0.5 \
+  --descriptor_dim 64 \
+  --lambda_cons 0.0 \
+  --grad_clip 1.0 \
+  --amp

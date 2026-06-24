@@ -1,0 +1,15 @@
+python test.py \
+  --data_mode 1000 \
+  --dataset_path ../../data/luminance_expanded_spike_x4k \
+  --device cuda:0 \
+  --load_model checkpoint/2026-06-08_20_22_20/best_model_psnr:36.2755_epoch:44_.pth \
+  --model la_swinsf_lite \
+  --grouped_eval \
+  --etas 0.1 0.3 0.5 0.7 1.0 2.0 \
+  --target_eta 0.3 \
+  --use_light_code \
+  --use_ldf_lite \
+  --use_lsa_lite \
+  --descriptor_dim 64 \
+  --save_image True \
+  --save_path ./save/eta0.3 \

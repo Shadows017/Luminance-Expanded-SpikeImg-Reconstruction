@@ -1,0 +1,12 @@
+python test_lite_real.py \
+  --dataset_path ../../demo_dataset_1000x1000 \
+  --device cuda:0 \
+  --load_model "checkpoint/distill_2026-06-15_15_50_14/best_student_psnr:38.4419_epoch:0_.pth" \
+  --eta 0.1 \
+  --use_light_code \
+  --use_ldf_lite \
+  --use_lsa_lite \
+  --descriptor_dim 64 \
+  --save_path ./save/real \
+  --print_debug \
+  --conversion_rate 0.6
